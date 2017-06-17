@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# perhaps save this file as /usr/local/bin/lede-tm02-cc
+#
+docker run --rm -v ${PWD}:/src davidsblog/lede-17-01-02-ht-tm02-cc:latest \
+     /bin/sh -c "cd /src; $*"
